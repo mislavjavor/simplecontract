@@ -16,31 +16,32 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b60c68061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063ef5fb05b146044575b600080fd5b3415604e57600080fd5b60546072565b60405180826000191660001916815260200191505060405180910390f35b60007f48656c6c6f0000000000000000000000000000000000000000000000000000009050905600a165627a7a7230582001499b2bb6a0ed9c6a03904bbf30bfc9c7540b3b85cc940937946e94f52c184a0029",
-  "deployedBytecode": "0x606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063ef5fb05b146044575b600080fd5b3415604e57600080fd5b60546072565b60405180826000191660001916815260200191505060405180910390f35b60007f48656c6c6f0000000000000000000000000000000000000000000000000000009050905600a165627a7a7230582001499b2bb6a0ed9c6a03904bbf30bfc9c7540b3b85cc940937946e94f52c184a0029",
-  "sourceMap": "26:115:1:-;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "26:115:1:-;;;;;;;;;;;;;;;;;;;;;;;;57:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;98:7;117:14;;;57:81;:::o",
-  "source": "pragma solidity 0.4.21;\n\n\ncontract SimpleContract {\n\n    function sayHello() public pure returns (bytes32) {\n        return \"Hello\";\n    }\n\n}\n",
+  "bytecode": "0x6060604052341561000f57600080fd5b60c68061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063ef5fb05b146044575b600080fd5b3415604e57600080fd5b60546072565b60405180826000191660001916815260200191505060405180910390f35b60007f48656c6c6f0000000000000000000000000000000000000000000000000000009050905600a165627a7a72305820aea77cf965df80746bc32f5f7345c8bd61fdefd79465b49b5b5c0afd9e3d745d0029",
+  "deployedBytecode": "0x606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063ef5fb05b146044575b600080fd5b3415604e57600080fd5b60546072565b60405180826000191660001916815260200191505060405180910390f35b60007f48656c6c6f0000000000000000000000000000000000000000000000000000009050905600a165627a7a72305820aea77cf965df80746bc32f5f7345c8bd61fdefd79465b49b5b5c0afd9e3d745d0029",
+  "sourceMap": "27:115:2:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "27:115:2:-;;;;;;;;;;;;;;;;;;;;;;;;58:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;99:7;118:14;;;58:81;:::o",
+  "source": "pragma solidity ^0.4.21;\n\n\ncontract SimpleContract {\n\n    function sayHello() public pure returns (bytes32) {\n        return \"Hello\";\n    }\n\n}\n",
   "sourcePath": "/Users/mjr/Documents/Projects/SimpleContract/contracts/SimpleContract.sol",
   "ast": {
     "absolutePath": "/Users/mjr/Documents/Projects/SimpleContract/contracts/SimpleContract.sol",
     "exportedSymbols": {
       "SimpleContract": [
-        36
+        93
       ]
     },
-    "id": 37,
+    "id": 94,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 27,
+        "id": 84,
         "literals": [
           "solidity",
+          "^",
           "0.4",
           ".21"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:1"
+        "src": "0:24:2"
       },
       {
         "baseContracts": [],
@@ -48,31 +49,31 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 36,
+        "id": 93,
         "linearizedBaseContracts": [
-          36
+          93
         ],
         "name": "SimpleContract",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 34,
+              "id": 91,
               "nodeType": "Block",
-              "src": "107:31:1",
+              "src": "108:31:2",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "48656c6c6f",
-                    "id": 32,
+                    "id": 89,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "string",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "124:7:1",
+                    "src": "125:7:2",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_stringliteral_06b3dfaec148fb1bb2b066f10ec285e7c9bf402ab32aa78a5d38e34566810cd2",
@@ -80,15 +81,15 @@
                     },
                     "value": "Hello"
                   },
-                  "functionReturnParameters": 31,
-                  "id": 33,
+                  "functionReturnParameters": 88,
+                  "id": 90,
                   "nodeType": "Return",
-                  "src": "117:14:1"
+                  "src": "118:14:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 35,
+            "id": 92,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -96,23 +97,23 @@
             "name": "sayHello",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 28,
+              "id": 85,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "74:2:1"
+              "src": "75:2:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 31,
+              "id": 88,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 30,
+                  "id": 87,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 35,
-                  "src": "98:7:1",
+                  "scope": 92,
+                  "src": "99:7:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -120,10 +121,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 29,
+                    "id": 86,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "98:7:1",
+                    "src": "99:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -133,40 +134,41 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "97:9:1"
+              "src": "98:9:2"
             },
-            "scope": 36,
-            "src": "57:81:1",
+            "scope": 93,
+            "src": "58:81:2",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 37,
-        "src": "26:115:1"
+        "scope": 94,
+        "src": "27:115:2"
       }
     ],
-    "src": "0:142:1"
+    "src": "0:143:2"
   },
   "legacyAST": {
     "absolutePath": "/Users/mjr/Documents/Projects/SimpleContract/contracts/SimpleContract.sol",
     "exportedSymbols": {
       "SimpleContract": [
-        36
+        93
       ]
     },
-    "id": 37,
+    "id": 94,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 27,
+        "id": 84,
         "literals": [
           "solidity",
+          "^",
           "0.4",
           ".21"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:1"
+        "src": "0:24:2"
       },
       {
         "baseContracts": [],
@@ -174,31 +176,31 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 36,
+        "id": 93,
         "linearizedBaseContracts": [
-          36
+          93
         ],
         "name": "SimpleContract",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 34,
+              "id": 91,
               "nodeType": "Block",
-              "src": "107:31:1",
+              "src": "108:31:2",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "48656c6c6f",
-                    "id": 32,
+                    "id": 89,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "string",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "124:7:1",
+                    "src": "125:7:2",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_stringliteral_06b3dfaec148fb1bb2b066f10ec285e7c9bf402ab32aa78a5d38e34566810cd2",
@@ -206,15 +208,15 @@
                     },
                     "value": "Hello"
                   },
-                  "functionReturnParameters": 31,
-                  "id": 33,
+                  "functionReturnParameters": 88,
+                  "id": 90,
                   "nodeType": "Return",
-                  "src": "117:14:1"
+                  "src": "118:14:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 35,
+            "id": 92,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -222,23 +224,23 @@
             "name": "sayHello",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 28,
+              "id": 85,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "74:2:1"
+              "src": "75:2:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 31,
+              "id": 88,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 30,
+                  "id": 87,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 35,
-                  "src": "98:7:1",
+                  "scope": 92,
+                  "src": "99:7:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -246,10 +248,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 29,
+                    "id": 86,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "98:7:1",
+                    "src": "99:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -259,20 +261,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "97:9:1"
+              "src": "98:9:2"
             },
-            "scope": 36,
-            "src": "57:81:1",
+            "scope": 93,
+            "src": "58:81:2",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 37,
-        "src": "26:115:1"
+        "scope": 94,
+        "src": "27:115:2"
       }
     ],
-    "src": "0:142:1"
+    "src": "0:143:2"
   },
   "compiler": {
     "name": "solc",
@@ -282,10 +284,10 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x4cc728078c0a060001e0e9925d157dff7b633ac9",
-      "transactionHash": "0xab0d6b3fed21b0f7c535e09da1634fe0509ab1ff792c4d19c96ea9184eb2236e"
+      "address": "0x49e17057c6f59f1d600e10bae811f1814df58ee6",
+      "transactionHash": "0xfb69668743cb9c48989f0dfc6ef1479ab9d0261c411a71a27a6b70afba67145c"
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-04-27T10:58:41.242Z"
+  "updatedAt": "2018-04-27T11:03:03.059Z"
 }

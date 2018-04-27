@@ -27,11 +27,11 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b6040516020806101c083398101604052808051906020019091905050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506101458061007b6000396000f300606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063cfae321714610046575b600080fd5b341561005157600080fd5b610059610077565b60405180826000191660001916815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663ef5fb05b6040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15156100fd57600080fd5b5af1151561010a57600080fd5b505050604051805190509050905600a165627a7a72305820b01446343794976b12066dceadb6e6eb563eba0e959979d1e2a7e48c6203b61e0029",
-  "deployedBytecode": "0x606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063cfae321714610046575b600080fd5b341561005157600080fd5b610059610077565b60405180826000191660001916815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663ef5fb05b6040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15156100fd57600080fd5b5af1151561010a57600080fd5b505050604051805190509050905600a165627a7a72305820b01446343794976b12066dceadb6e6eb563eba0e959979d1e2a7e48c6203b61e0029",
-  "sourceMap": "58:234:0:-;;;119:80;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;186:6;176:7;;:16;;;;;;;;;;;;;;;;;;119:80;58:234;;;;;;",
-  "deployedSourceMap": "58:234:0:-;;;;;;;;;;;;;;;;;;;;;;;;205:84;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;238:7;264;;;;;;;;;;;:16;;;:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;257:25;;205:84;:::o",
-  "source": "pragma solidity 0.4.21;\n\nimport \"./SimpleContract.sol\";\n\n\ncontract Greeter {\n\n    SimpleContract private _simple;\n\n    function Greeter(SimpleContract simple) public {\n        _simple = simple;\n    }\n\n    function greet() public returns (bytes32) {\n        return _simple.sayHello();\n    }\n\n}\n",
+  "bytecode": "0x6060604052341561000f57600080fd5b6040516020806101c083398101604052808051906020019091905050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506101458061007b6000396000f300606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063cfae321714610046575b600080fd5b341561005157600080fd5b610059610077565b60405180826000191660001916815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663ef5fb05b6040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15156100fd57600080fd5b5af1151561010a57600080fd5b505050604051805190509050905600a165627a7a72305820e05f78094b1fa10bf1468e77890c4b873310409e057f6dcb64b822489be6df520029",
+  "deployedBytecode": "0x606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063cfae321714610046575b600080fd5b341561005157600080fd5b610059610077565b60405180826000191660001916815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663ef5fb05b6040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15156100fd57600080fd5b5af1151561010a57600080fd5b505050604051805190509050905600a165627a7a72305820e05f78094b1fa10bf1468e77890c4b873310409e057f6dcb64b822489be6df520029",
+  "sourceMap": "59:234:0:-;;;120:80;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;187:6;177:7;;:16;;;;;;;;;;;;;;;;;;120:80;59:234;;;;;;",
+  "deployedSourceMap": "59:234:0:-;;;;;;;;;;;;;;;;;;;;;;;;206:84;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;239:7;265;;;;;;;;;;;:16;;;:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;258:25;;206:84;:::o",
+  "source": "pragma solidity ^0.4.21;\n\nimport \"./SimpleContract.sol\";\n\n\ncontract Greeter {\n\n    SimpleContract private _simple;\n\n    function Greeter(SimpleContract simple) public {\n        _simple = simple;\n    }\n\n    function greet() public returns (bytes32) {\n        return _simple.sayHello();\n    }\n\n}\n",
   "sourcePath": "/Users/mjr/Documents/Projects/SimpleContract/contracts/Greeter.sol",
   "ast": {
     "absolutePath": "/Users/mjr/Documents/Projects/SimpleContract/contracts/Greeter.sol",
@@ -47,11 +47,12 @@
         "id": 1,
         "literals": [
           "solidity",
+          "^",
           "0.4",
           ".21"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:0"
+        "src": "0:24:0"
       },
       {
         "absolutePath": "/Users/mjr/Documents/Projects/SimpleContract/contracts/SimpleContract.sol",
@@ -59,8 +60,8 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 26,
-        "sourceUnit": 37,
-        "src": "25:30:0",
+        "sourceUnit": 94,
+        "src": "26:30:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -83,11 +84,11 @@
             "name": "_simple",
             "nodeType": "VariableDeclaration",
             "scope": 25,
-            "src": "82:30:0",
+            "src": "83:30:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_SimpleContract_$36",
+              "typeIdentifier": "t_contract$_SimpleContract_$93",
               "typeString": "contract SimpleContract"
             },
             "typeName": {
@@ -95,10 +96,10 @@
               "id": 3,
               "name": "SimpleContract",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 36,
-              "src": "82:14:0",
+              "referencedDeclaration": 93,
+              "src": "83:14:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SimpleContract_$36",
+                "typeIdentifier": "t_contract$_SimpleContract_$93",
                 "typeString": "contract SimpleContract"
               }
             },
@@ -109,7 +110,7 @@
             "body": {
               "id": 13,
               "nodeType": "Block",
-              "src": "166:33:0",
+              "src": "167:33:0",
               "statements": [
                 {
                   "expression": {
@@ -126,9 +127,9 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 4,
-                      "src": "176:7:0",
+                      "src": "177:7:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_SimpleContract_$36",
+                        "typeIdentifier": "t_contract$_SimpleContract_$93",
                         "typeString": "contract SimpleContract"
                       }
                     },
@@ -141,21 +142,21 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 6,
-                      "src": "186:6:0",
+                      "src": "187:6:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_SimpleContract_$36",
+                        "typeIdentifier": "t_contract$_SimpleContract_$93",
                         "typeString": "contract SimpleContract"
                       }
                     },
-                    "src": "176:16:0",
+                    "src": "177:16:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_SimpleContract_$36",
+                      "typeIdentifier": "t_contract$_SimpleContract_$93",
                       "typeString": "contract SimpleContract"
                     }
                   },
                   "id": 12,
                   "nodeType": "ExpressionStatement",
-                  "src": "176:16:0"
+                  "src": "177:16:0"
                 }
               ]
             },
@@ -177,11 +178,11 @@
                   "name": "simple",
                   "nodeType": "VariableDeclaration",
                   "scope": 14,
-                  "src": "136:21:0",
+                  "src": "137:21:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_SimpleContract_$36",
+                    "typeIdentifier": "t_contract$_SimpleContract_$93",
                     "typeString": "contract SimpleContract"
                   },
                   "typeName": {
@@ -189,10 +190,10 @@
                     "id": 5,
                     "name": "SimpleContract",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 36,
-                    "src": "136:14:0",
+                    "referencedDeclaration": 93,
+                    "src": "137:14:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_SimpleContract_$36",
+                      "typeIdentifier": "t_contract$_SimpleContract_$93",
                       "typeString": "contract SimpleContract"
                     }
                   },
@@ -200,17 +201,17 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "135:23:0"
+              "src": "136:23:0"
             },
             "payable": false,
             "returnParameters": {
               "id": 8,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "166:0:0"
+              "src": "167:0:0"
             },
             "scope": 25,
-            "src": "119:80:0",
+            "src": "120:80:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -219,7 +220,7 @@
             "body": {
               "id": 23,
               "nodeType": "Block",
-              "src": "247:42:0",
+              "src": "248:42:0",
               "statements": [
                 {
                   "expression": {
@@ -234,9 +235,9 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4,
-                        "src": "264:7:0",
+                        "src": "265:7:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_SimpleContract_$36",
+                          "typeIdentifier": "t_contract$_SimpleContract_$93",
                           "typeString": "contract SimpleContract"
                         }
                       },
@@ -247,8 +248,8 @@
                       "lValueRequested": false,
                       "memberName": "sayHello",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 35,
-                      "src": "264:16:0",
+                      "referencedDeclaration": 92,
+                      "src": "265:16:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_pure$__$returns$_t_bytes32_$",
                         "typeString": "function () pure external returns (bytes32)"
@@ -262,7 +263,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "264:18:0",
+                    "src": "265:18:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -271,7 +272,7 @@
                   "functionReturnParameters": 18,
                   "id": 22,
                   "nodeType": "Return",
-                  "src": "257:25:0"
+                  "src": "258:25:0"
                 }
               ]
             },
@@ -287,7 +288,7 @@
               "id": 15,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "219:2:0"
+              "src": "220:2:0"
             },
             "payable": false,
             "returnParameters": {
@@ -300,7 +301,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 24,
-                  "src": "238:7:0",
+                  "src": "239:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -311,7 +312,7 @@
                     "id": 16,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "238:7:0",
+                    "src": "239:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -321,20 +322,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "237:9:0"
+              "src": "238:9:0"
             },
             "scope": 25,
-            "src": "205:84:0",
+            "src": "206:84:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 26,
-        "src": "58:234:0"
+        "src": "59:234:0"
       }
     ],
-    "src": "0:293:0"
+    "src": "0:294:0"
   },
   "legacyAST": {
     "absolutePath": "/Users/mjr/Documents/Projects/SimpleContract/contracts/Greeter.sol",
@@ -350,11 +351,12 @@
         "id": 1,
         "literals": [
           "solidity",
+          "^",
           "0.4",
           ".21"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:0"
+        "src": "0:24:0"
       },
       {
         "absolutePath": "/Users/mjr/Documents/Projects/SimpleContract/contracts/SimpleContract.sol",
@@ -362,8 +364,8 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 26,
-        "sourceUnit": 37,
-        "src": "25:30:0",
+        "sourceUnit": 94,
+        "src": "26:30:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -386,11 +388,11 @@
             "name": "_simple",
             "nodeType": "VariableDeclaration",
             "scope": 25,
-            "src": "82:30:0",
+            "src": "83:30:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_SimpleContract_$36",
+              "typeIdentifier": "t_contract$_SimpleContract_$93",
               "typeString": "contract SimpleContract"
             },
             "typeName": {
@@ -398,10 +400,10 @@
               "id": 3,
               "name": "SimpleContract",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 36,
-              "src": "82:14:0",
+              "referencedDeclaration": 93,
+              "src": "83:14:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SimpleContract_$36",
+                "typeIdentifier": "t_contract$_SimpleContract_$93",
                 "typeString": "contract SimpleContract"
               }
             },
@@ -412,7 +414,7 @@
             "body": {
               "id": 13,
               "nodeType": "Block",
-              "src": "166:33:0",
+              "src": "167:33:0",
               "statements": [
                 {
                   "expression": {
@@ -429,9 +431,9 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 4,
-                      "src": "176:7:0",
+                      "src": "177:7:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_SimpleContract_$36",
+                        "typeIdentifier": "t_contract$_SimpleContract_$93",
                         "typeString": "contract SimpleContract"
                       }
                     },
@@ -444,21 +446,21 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 6,
-                      "src": "186:6:0",
+                      "src": "187:6:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_SimpleContract_$36",
+                        "typeIdentifier": "t_contract$_SimpleContract_$93",
                         "typeString": "contract SimpleContract"
                       }
                     },
-                    "src": "176:16:0",
+                    "src": "177:16:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_SimpleContract_$36",
+                      "typeIdentifier": "t_contract$_SimpleContract_$93",
                       "typeString": "contract SimpleContract"
                     }
                   },
                   "id": 12,
                   "nodeType": "ExpressionStatement",
-                  "src": "176:16:0"
+                  "src": "177:16:0"
                 }
               ]
             },
@@ -480,11 +482,11 @@
                   "name": "simple",
                   "nodeType": "VariableDeclaration",
                   "scope": 14,
-                  "src": "136:21:0",
+                  "src": "137:21:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_SimpleContract_$36",
+                    "typeIdentifier": "t_contract$_SimpleContract_$93",
                     "typeString": "contract SimpleContract"
                   },
                   "typeName": {
@@ -492,10 +494,10 @@
                     "id": 5,
                     "name": "SimpleContract",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 36,
-                    "src": "136:14:0",
+                    "referencedDeclaration": 93,
+                    "src": "137:14:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_SimpleContract_$36",
+                      "typeIdentifier": "t_contract$_SimpleContract_$93",
                       "typeString": "contract SimpleContract"
                     }
                   },
@@ -503,17 +505,17 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "135:23:0"
+              "src": "136:23:0"
             },
             "payable": false,
             "returnParameters": {
               "id": 8,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "166:0:0"
+              "src": "167:0:0"
             },
             "scope": 25,
-            "src": "119:80:0",
+            "src": "120:80:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -522,7 +524,7 @@
             "body": {
               "id": 23,
               "nodeType": "Block",
-              "src": "247:42:0",
+              "src": "248:42:0",
               "statements": [
                 {
                   "expression": {
@@ -537,9 +539,9 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4,
-                        "src": "264:7:0",
+                        "src": "265:7:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_SimpleContract_$36",
+                          "typeIdentifier": "t_contract$_SimpleContract_$93",
                           "typeString": "contract SimpleContract"
                         }
                       },
@@ -550,8 +552,8 @@
                       "lValueRequested": false,
                       "memberName": "sayHello",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 35,
-                      "src": "264:16:0",
+                      "referencedDeclaration": 92,
+                      "src": "265:16:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_pure$__$returns$_t_bytes32_$",
                         "typeString": "function () pure external returns (bytes32)"
@@ -565,7 +567,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "264:18:0",
+                    "src": "265:18:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -574,7 +576,7 @@
                   "functionReturnParameters": 18,
                   "id": 22,
                   "nodeType": "Return",
-                  "src": "257:25:0"
+                  "src": "258:25:0"
                 }
               ]
             },
@@ -590,7 +592,7 @@
               "id": 15,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "219:2:0"
+              "src": "220:2:0"
             },
             "payable": false,
             "returnParameters": {
@@ -603,7 +605,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 24,
-                  "src": "238:7:0",
+                  "src": "239:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -614,7 +616,7 @@
                     "id": 16,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "238:7:0",
+                    "src": "239:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -624,20 +626,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "237:9:0"
+              "src": "238:9:0"
             },
             "scope": 25,
-            "src": "205:84:0",
+            "src": "206:84:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 26,
-        "src": "58:234:0"
+        "src": "59:234:0"
       }
     ],
-    "src": "0:293:0"
+    "src": "0:294:0"
   },
   "compiler": {
     "name": "solc",
@@ -647,10 +649,10 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x360e054755e8a3bff4d901b63326efcfbdf242e8",
-      "transactionHash": "0x504621490e9f0fbfddd4a9b3819dccdc169788480a9d0d4ee7c8750b0b4ab10f"
+      "address": "0x265a56649f1b87e66458f7c362e33e1d615c44d6",
+      "transactionHash": "0x5d39a56d8044acd7874d4d5c4da14298c60aef5cddd0e276876cf2df0ba97e97"
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-04-27T10:58:41.243Z"
+  "updatedAt": "2018-04-27T11:03:03.059Z"
 }
