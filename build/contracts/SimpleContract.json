@@ -18,29 +18,29 @@
   ],
   "bytecode": "0x6060604052341561000f57600080fd5b60c68061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063ef5fb05b146044575b600080fd5b3415604e57600080fd5b60546072565b60405180826000191660001916815260200191505060405180910390f35b60007f48656c6c6f0000000000000000000000000000000000000000000000000000009050905600a165627a7a7230582001499b2bb6a0ed9c6a03904bbf30bfc9c7540b3b85cc940937946e94f52c184a0029",
   "deployedBytecode": "0x606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063ef5fb05b146044575b600080fd5b3415604e57600080fd5b60546072565b60405180826000191660001916815260200191505060405180910390f35b60007f48656c6c6f0000000000000000000000000000000000000000000000000000009050905600a165627a7a7230582001499b2bb6a0ed9c6a03904bbf30bfc9c7540b3b85cc940937946e94f52c184a0029",
-  "sourceMap": "26:115:0:-;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "26:115:0:-;;;;;;;;;;;;;;;;;;;;;;;;57:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;98:7;117:14;;;57:81;:::o",
+  "sourceMap": "26:115:1:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:115:1:-;;;;;;;;;;;;;;;;;;;;;;;;57:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;98:7;117:14;;;57:81;:::o",
   "source": "pragma solidity 0.4.21;\n\n\ncontract SimpleContract {\n\n    function sayHello() public pure returns (bytes32) {\n        return \"Hello\";\n    }\n\n}\n",
   "sourcePath": "/Users/mjr/Documents/Projects/SimpleContract/contracts/SimpleContract.sol",
   "ast": {
     "absolutePath": "/Users/mjr/Documents/Projects/SimpleContract/contracts/SimpleContract.sol",
     "exportedSymbols": {
       "SimpleContract": [
-        10
+        36
       ]
     },
-    "id": 11,
+    "id": 37,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1,
+        "id": 27,
         "literals": [
           "solidity",
           "0.4",
           ".21"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:0"
+        "src": "0:23:1"
       },
       {
         "baseContracts": [],
@@ -48,31 +48,31 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 10,
+        "id": 36,
         "linearizedBaseContracts": [
-          10
+          36
         ],
         "name": "SimpleContract",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 8,
+              "id": 34,
               "nodeType": "Block",
-              "src": "107:31:0",
+              "src": "107:31:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "48656c6c6f",
-                    "id": 6,
+                    "id": 32,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "string",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "124:7:0",
+                    "src": "124:7:1",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_stringliteral_06b3dfaec148fb1bb2b066f10ec285e7c9bf402ab32aa78a5d38e34566810cd2",
@@ -80,15 +80,15 @@
                     },
                     "value": "Hello"
                   },
-                  "functionReturnParameters": 5,
-                  "id": 7,
+                  "functionReturnParameters": 31,
+                  "id": 33,
                   "nodeType": "Return",
-                  "src": "117:14:0"
+                  "src": "117:14:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 9,
+            "id": 35,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -96,23 +96,23 @@
             "name": "sayHello",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2,
+              "id": 28,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "74:2:0"
+              "src": "74:2:1"
             },
             "payable": false,
             "returnParameters": {
-              "id": 5,
+              "id": 31,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4,
+                  "id": 30,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9,
-                  "src": "98:7:0",
+                  "scope": 35,
+                  "src": "98:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -120,10 +120,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 3,
+                    "id": 29,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "98:7:0",
+                    "src": "98:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -133,40 +133,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "97:9:0"
+              "src": "97:9:1"
             },
-            "scope": 10,
-            "src": "57:81:0",
+            "scope": 36,
+            "src": "57:81:1",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 11,
-        "src": "26:115:0"
+        "scope": 37,
+        "src": "26:115:1"
       }
     ],
-    "src": "0:142:0"
+    "src": "0:142:1"
   },
   "legacyAST": {
     "absolutePath": "/Users/mjr/Documents/Projects/SimpleContract/contracts/SimpleContract.sol",
     "exportedSymbols": {
       "SimpleContract": [
-        10
+        36
       ]
     },
-    "id": 11,
+    "id": 37,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1,
+        "id": 27,
         "literals": [
           "solidity",
           "0.4",
           ".21"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:0"
+        "src": "0:23:1"
       },
       {
         "baseContracts": [],
@@ -174,31 +174,31 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 10,
+        "id": 36,
         "linearizedBaseContracts": [
-          10
+          36
         ],
         "name": "SimpleContract",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 8,
+              "id": 34,
               "nodeType": "Block",
-              "src": "107:31:0",
+              "src": "107:31:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "48656c6c6f",
-                    "id": 6,
+                    "id": 32,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "string",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "124:7:0",
+                    "src": "124:7:1",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_stringliteral_06b3dfaec148fb1bb2b066f10ec285e7c9bf402ab32aa78a5d38e34566810cd2",
@@ -206,15 +206,15 @@
                     },
                     "value": "Hello"
                   },
-                  "functionReturnParameters": 5,
-                  "id": 7,
+                  "functionReturnParameters": 31,
+                  "id": 33,
                   "nodeType": "Return",
-                  "src": "117:14:0"
+                  "src": "117:14:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 9,
+            "id": 35,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -222,23 +222,23 @@
             "name": "sayHello",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2,
+              "id": 28,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "74:2:0"
+              "src": "74:2:1"
             },
             "payable": false,
             "returnParameters": {
-              "id": 5,
+              "id": 31,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4,
+                  "id": 30,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9,
-                  "src": "98:7:0",
+                  "scope": 35,
+                  "src": "98:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -246,10 +246,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 3,
+                    "id": 29,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "98:7:0",
+                    "src": "98:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -259,20 +259,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "97:9:0"
+              "src": "97:9:1"
             },
-            "scope": 10,
-            "src": "57:81:0",
+            "scope": 36,
+            "src": "57:81:1",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 11,
-        "src": "26:115:0"
+        "scope": 37,
+        "src": "26:115:1"
       }
     ],
-    "src": "0:142:0"
+    "src": "0:142:1"
   },
   "compiler": {
     "name": "solc",
@@ -282,10 +282,10 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xe31d4b821c7f9e2175970fc1e7def83a35029933",
-      "transactionHash": "0x4761a4656f2cd004c5c174757d443c03e9d2c58fb4b1bc53b43b6801656a495f"
+      "address": "0x4cc728078c0a060001e0e9925d157dff7b633ac9",
+      "transactionHash": "0xab0d6b3fed21b0f7c535e09da1634fe0509ab1ff792c4d19c96ea9184eb2236e"
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-04-27T10:23:34.110Z"
+  "updatedAt": "2018-04-27T10:58:41.242Z"
 }
