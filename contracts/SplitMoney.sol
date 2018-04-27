@@ -1,6 +1,6 @@
 pragma solidity ^0.4.21;
 
-import "zeppelin-solidity/contracts/tokens/ERC20/StandardToken.sol";
+import "zeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
 
 
 contract SplitMoney is StandardToken {
@@ -13,5 +13,4 @@ contract SplitMoney is StandardToken {
         balances[msg.sender] = 1000000 * (10 ** uint(decimals));
         totalSupply_ = 1000000 * (10 ** uint(decimals));
     }
-
 }
