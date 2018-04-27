@@ -4,11 +4,13 @@ contract("SimpleContract", async(accounts) => {
 
     it("should say hello", async() => {
 
+        let expected = "Hello";
+
         let iSimpleContract = await SimpleContract.deployed();
 
         let helloResult = await iSimpleContract.sayHello();
 
-        console.log(web3.toAscii(helloResult));
+        assert(web3.toAscii(helloResult) == expected);
 
     });
 
