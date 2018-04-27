@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/mislavjavor/simplecontract#readme",
   "dependencies": {
-    "zeppelin-solidity": "^1.9.0"
+    "zeppelin-solidity": "^1.9.0",
+    "truffle-hdwallet-provider": "^0.0.3"
   }
 }

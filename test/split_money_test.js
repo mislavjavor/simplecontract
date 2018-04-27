@@ -9,22 +9,24 @@ contract("SplitMoney", async(accounts) => {
 
     it("should send money", async() => {
 
-        let iSplitMoney = SplitMoney.deployed();
+        let iSplitMoney = await SplitMoney.deployed();
 
         let sendAmount = 400;
 
-        let initialBalanceSender = iSplitMoney.balanceOf.call(accounts[0]);
-        let initialBalanceReceiver = iSplitMoney.balanceOf.call(accounts[1]);
+        let initialBalanceSender = await iSplitMoney.balanceOf(accounts[0]);
+        let initialBalanceReceiver = await iSplitMoney.balanceOf(accounts[1]);
 
         await iSplitMoney.transfer(accounts[1], cMoney(sendAmount));
 
-        let finalBalanceSender = iSplitMoney.balanceOf.call(accounts[0]);
-        let finalBalanceReceiver = iSplitMoney.balanceOf.call(accounts[1]);
+        let finalBalanceSender =  await iSplitMoney.balanceOf(accounts[0]);
+        let finalBalanceReceiver = await iSplitMoney.balanceOf(accounts[1]);
 
-        assert.equals(finalBalanceSender,
-            initialBalanceSender - cMoney(sendAmount));
-        asseert.equals(finalBalanceReceiver,
-            initialBalanceReceiver + cMoney(sendAmount));
+        console.log("Initial balance sender:" + initialBalanceSender.toString());
+        console.log("Final balance sender:" + finalBalanceSender.toString());
+
+        console.log("Initial balance receiver:" + initialBalanceReceiver.toString());
+        console.log("Final balance sender:" + finalBalanceReceiver.toString());
+
     });
 
 });

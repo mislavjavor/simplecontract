@@ -10,8 +10,7 @@ contract("SimpleContract", async(accounts) => {
 
         let helloResult = await iSimpleContract.sayHello();
 
-        assert.equal(web3.toAscii(helloResult), expected);
-
+        assert.equal(web3.toAscii(helloResult).replace(/\0/g, ''), expected);
     });
 
 });
